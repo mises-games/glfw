@@ -130,6 +130,7 @@ information on what to include when reporting a bug.
  - Added `GLFW_X11_XCB_VULKAN_SURFACE` init hint for selecting X11 Vulkan
    surface extension (#1793)
  - Made joystick subsystem initialize at first use (#1284,#1646)
+ - Made `GLFW_DOUBLEBUFFER` a read-only window attribute
  - Updated the minimum required CMake version to 3.1
  - Disabled tests and examples by default when built as a CMake subdirectory
  - Bugfix: The CMake config-file package used an absolute path and was not
@@ -139,6 +140,7 @@ information on what to include when reporting a bug.
  - Bugfix: Built-in mappings failed because some OEMs re-used VID/PID (#1583)
  - Bugfix: Some extension loader headers did not prevent default OpenGL header
    inclusion (#1695)
+ - Bugfix: Buffers were swapped at creation on single-buffered windows (#1873)
  - [Win32] Added the `GLFW_WIN32_KEYBOARD_MENU` window hint for enabling access
            to the window menu
  - [Win32] Added a version info resource to the GLFW DLL
